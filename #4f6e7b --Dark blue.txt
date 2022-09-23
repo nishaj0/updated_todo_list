@@ -1,0 +1,14 @@
+#4f6e7b   --Dark blue
+#61c6d2   --Light blue
+#cfa777   --Dark warm
+#eecc9a   --Light warm
+
+#244d61   --Dark blue
+#5689c0   --blue
+#75e2ff   --Light blue
+#eaebed   -- white
+
+#326789   --Dark blue
+#78a6c8   --blue
+#e9eef2   --white
+#e65c4f   --red

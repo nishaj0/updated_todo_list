@@ -1,6 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-*{
+
+* {
    margin: 0;
    padding: 0;
+   font-family: 'Lato', sans-serif;
+}
 
+.body {
+   margin-top: 5vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.container {
+   width: 400px;
+   height: 600px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #eecc9a;
+   
+}
+
+.add {
+   width: 350px;
+   height: 40px;
+   background-color: #eecc9a;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.add input{
+   width: 275px;
+   height: 100%;
+}
+.add button{
+   height: 100%;
+   width: 50px;
+}
+
+.list{
+   width: 350px;
+   height: 400px;
+   background-color:#61c6d2 ;
 }
