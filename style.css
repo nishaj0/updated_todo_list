@@ -1,121 +1,80 @@
 * {
-   margin: 0;
-   padding: 0;
-   font-family: sans-serif;
-   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-::-webkit-scrollbar {
-   width: 0;
+::before,
+::after {
+  box-sizing: border-box;
 }
-
-.body {
-   margin-top: 5vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
+body {
+  font-family: roboto;
+  background-color: grey;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
 }
 
 .container {
-   width: 400px;
-   height: 600px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   border-radius: 30px;
-   background-color: #326789;
-
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.head {
-   color: white;
+.container h1 {
+  text-align: center;
+  margin-top: 1rem;
 }
-
-.add {
-   width: 350px;
-   height: 40px;
-   background-color: #326789;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+.todo-header {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 74px;
+  background-color: rgb(0, 110, 255);
+  width: 100%;
+  padding: 2rem 0;
 }
-
-.add input {
-   width: 275px;
-   height: 100%;
-   font-size: 20px;
-   border-radius: 10px;
-   border: none;
-   
+.todo-header .input {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 255px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding-left: 15px;
 }
-
-.add button {
-   height: 100%;
-   width: 50px;
-   border-radius: 10px;
-   cursor: pointer;
+.todo-header .addbtn {
+  position: absolute;
+  border: none;
+  outline: none;
+  top: 50%;
+  right: 8%;
+  transform: translate(-50%, -50%);
+  padding: 12px;
+  border-radius: 4px;
 }
-
-.list {
-   width: 350px;
-   height: 400px;
-   background-color: #78a6c8;
-   border-radius: 30px;
-   padding-top: 20px;
-   padding-bottom: 20px;
+.todo-lists {
+  position: absolute;
+  top: 23%;
+  width: 100%;
+  height: 475px;
+  overflow: hidden;
+  overflow-y: auto;
 }
-
-.list ul {
-   width: 100%;
-   height: 100%;
-   overflow: scroll;
-   list-style-type: none;
-
+.todo-lists li {
+  width: 100%;
+  background-color: orange;
+  padding: 1rem 0rem 1rem 1rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-size: 1rem;
 }
-
-.list li {
-   color: rgba(0, 0, 0, 0.938);
-   background-color: #e9eef2;
-   width: 325px;
-   height: 40px;
-   font-size: 20px;
-   border-radius: 10px;
-   list-style: none;
-   display: flex;
-   align-items: center;
-   margin: 10px;
-   padding-left: 5px;
-   display: flex;
-   justify-content: space-between;
-}
-
-
-.list li button {
-   width: 40px;
-   height: 40px;
-   border-radius: 10px;
-   border-style: none;
-   background-color: #e65c4f;
-   cursor: pointer;
-   transition: 0.2s;
-}
-
-/** I don't know why this hover working only in button */
-.list li :hover {
-   background-color: rgb(226, 0, 0);
-}
-
-
-/* .close {
-   padding: 12px 16px 12px 16px;
-   cursor: pointer;
-   transition: 0.2s;
-
-}
-
-.close :hover {
-   color: #e65c4f;
-
-} */
