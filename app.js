@@ -1,7 +1,6 @@
 let input = document.querySelector("#input");
 let addBtn = document.querySelector("#add-btn")
 let ul = document.querySelector("#ul")
-let close = document.querySelector(".close")
 let li = document.querySelector("li")
 
 
@@ -22,19 +21,27 @@ let addLi = () => {
 
 let i = 0;
 
-let liReturn = function (item) {
+let liReturn = () => {
    for (; i < liArray.length; i++) {
 
-      let li = document.createElement("li")
-      let button = document.createElement("button")
+      let li = document.createElement("li");
+      let button = document.createElement("button");
 
-      li.append(liArray[i])
+      li.append(liArray[i]);
+      
+      button.append("x");
+      button.className = "remove";
+      li.append(button);
 
-      button.append("x")
-      li.append(button)
-
-      ul.append(li)
+      ul.append(li);
 
       console.log(liArray[i]);
+
    }
+}
+
+//? removing 
+
+function removeLi(){
+   console.log("removed")
 }
