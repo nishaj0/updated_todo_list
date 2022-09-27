@@ -5,36 +5,29 @@ let close = document.querySelector(".close")
 let li = document.querySelector("li")
 
 
-let liArray = [
-   " hello world "
-]
+//? adding li from input field and its connected to 'liArray'
 
-
-let liReturn = function (item) {
-
-
-   for (i = 0; i < liArray.length; i++) {
-      let li = document.createElement("li")
-      li.append(liArray[i])
-      ul.append(li)
-      console.log(liArray[i]);
-
-   }
-}
-
+let liArray = []
 
 let addLi = () => {
    if (input.value) {
       liArray = [...liArray, input.value]
 
-      if(!ul.value){
-         liReturn()
-      }
-      else{
-         li.remove()
-      }
-      
+      liReturn()
 
+      console.log(i);
       console.log(liArray)
    }
 };
+
+let i = 0;
+
+let liReturn = function (item) {
+   for (; i < liArray.length; i++) {
+      let li = document.createElement("li")
+      li.append(liArray[i])
+      ul.append(li)
+      console.log(liArray[i]);
+   }
+}
+
