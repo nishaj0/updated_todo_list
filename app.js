@@ -24,10 +24,17 @@ let i = 0;
 
 let liReturn = function (item) {
    for (; i < liArray.length; i++) {
+
       let li = document.createElement("li")
+      let button = document.createElement("button")
+
       li.append(liArray[i])
+
+      button.append("x")
+      li.append(button)
+
       ul.append(li)
+
       console.log(liArray[i]);
    }
 }
-

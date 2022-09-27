@@ -90,7 +90,24 @@
    justify-content: space-between;
 }
 
-.close {
+
+.list li button {
+   width: 40px;
+   height: 40px;
+   border-radius: 10px;
+   border-style: none;
+   background-color: #e65c4f;
+   cursor: pointer;
+   transition: 0.2s;
+}
+
+/** I don't know why this hover working only in button */
+.list li :hover {
+   background-color: rgb(226, 0, 0);
+}
+
+
+/* .close {
    padding: 12px 16px 12px 16px;
    cursor: pointer;
    transition: 0.2s;
@@ -100,4 +117,4 @@
 .close :hover {
    color: #e65c4f;
 
-}
+} */
