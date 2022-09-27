@@ -2,7 +2,7 @@ let input = document.querySelector("#input");
 let addBtn = document.querySelector("#add-btn")
 let ul = document.querySelector("#ul")
 let li = document.querySelector("li")
-
+// hello
 
 //? adding li from input field and its connected to 'liArray'
 
