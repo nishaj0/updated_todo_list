@@ -73,8 +73,30 @@ a {
 .todo-lists li {
   width: 100%;
   background-color: orange;
-  padding: 1rem 0rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   margin-bottom: 1rem;
   color: black;
   font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+  animation: slideTop;
+  
+}
+@keyframes slideTop{
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slideDown{
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.todo-lists li .ri-delete-bin-4-fill{
+  font-size: 1.3rem;
 }
